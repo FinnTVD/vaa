@@ -1,0 +1,10 @@
+#header {
+  width: 100%;
+  height: 11.625rem;
+  background-color: var(--white);
+}
+
+#header .header__date {
+  height: 2.5rem;
+  background-color: var(--Library-Title, #015121);
+}

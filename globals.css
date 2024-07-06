@@ -1,0 +1,91 @@
+/* init root */
+:root {
+  --Library-Title: #015121;
+
+  --Foundation-Green-green-500: #015121;
+  --foundation-white-dark-hover: #999;
+  --Foundation-Green-Dark: #0e562c;
+  --Foundation-Green-Darker:#072814;
+  --Foundation-Green-Light: #E6F4EC;
+
+  --greyscaletext-80-primary:#262626
+  --greyscaletext-60-secondary: #3F3F3F;
+  --greyscaletext-40-tag: #6a6a6a;
+  --greyscaletext-20-inactive: #a9a9a9;
+  --greyscaletext-5-div: #ececec;
+
+  --white:white;
+  --black:black;
+}
+
+/* reset css */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+
+/* config rem */
+html{
+  font-size: 1vw;
+}
+
+@media (min-width: 1601px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: 4.26666vw;
+  }
+}
+/* init css body */
+body{
+  background-color: var(--white);
+  color: var(--greyscaletext-80-primary, #262626);
+}
+
+/* init container */
+
+.container{
+  min-width: 81.3125rem;
+  width: 81.3125rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* init button */
+.button--init{
+  height: 2.625rem;
+  border-radius: 6.25rem;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+}
