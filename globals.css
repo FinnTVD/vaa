@@ -3,6 +3,7 @@
   --Library-Title: #015121;
 
   --Foundation-Green-green-500: #015121;
+  --Foundation-Green-green-200: #8aaf99;
   --foundation-white-dark-hover: #999;
   --Foundation-Green-Dark: #0e562c;
   --Foundation-Green-Darker:#072814;
@@ -16,6 +17,9 @@
 
   --white:white;
   --black:black;
+
+
+  --font-nunito:"Nunito Sans", sans-serif;
 }
 
 /* reset css */
@@ -66,14 +70,16 @@ html{
     font-size: 4.26666vw;
   }
 }
+
+
 /* init css body */
 body{
   background-color: var(--white);
-  color: var(--greyscaletext-80-primary, #262626);
+  color: var(--greyscaletext-80-primary, hwb(0 15% 85%));
+  font-family: var(--font-nunito)
 }
 
 /* init container */
-
 .container{
   min-width: 81.3125rem;
   width: 81.3125rem;
@@ -86,6 +92,34 @@ body{
   height: 2.625rem;
   border-radius: 6.25rem;
   font-size: 0.875rem;
-  font-style: normal;
   font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1.88rem;
+  padding-right: 1.88rem;
+  box-shadow: 0px 0px 20px 0px rgba(198, 255, 189, 0.25);
+  width: fit-content;
+}
+
+/* variable button outline */
+.button--init[data-button="outline"] {
+  border: 1px solid var(--Foundation-Green-green-200, #8aaf99);
+  color: var(--Foundation-Green-green-500);
+}
+
+/* variable button primary */
+.button--init[data-button="primary"] {
+  background: var(--Foundation-Green-green-500, #015121);
+  color: var(--white);
+}
+
+/* modifier button primary */
+.button--init[button-width="full"] {
+  width: 100%;
+}
+
+/* modifier button primary */
+.button--init[button-rounded="none"] {
+  border-radius: 0.25rem;
 }
