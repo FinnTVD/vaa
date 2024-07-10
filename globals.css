@@ -123,3 +123,9 @@ body{
 .button--init[button-rounded="none"] {
   border-radius: 0.25rem;
 }
+@media (max-width: 767px) {
+  .container{
+    width: 100%;
+    min-width: auto;
+  }
+}
