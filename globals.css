@@ -53,6 +53,13 @@ button {
   outline: none;
   border: 0;
 }
+a{
+  text-decoration: none;
+  color: var(--greyscaletext-80-primary, hwb(0 15% 85%));
+}
+ul,ol{
+  list-style: none;
+}
 
 /* config rem */
 html{
@@ -76,7 +83,7 @@ html{
 body{
   background-color: var(--white);
   color: var(--greyscaletext-80-primary, hwb(0 15% 85%));
-  font-family: var(--font-nunito)
+  font-family: "Nunito Sans", sans-serif;
 }
 
 /* init container */
@@ -100,6 +107,7 @@ body{
   padding-right: 1.88rem;
   box-shadow: 0px 0px 20px 0px rgba(198, 255, 189, 0.25);
   width: fit-content;
+  transition: all 0.2s;
 }
 
 /* variable button outline */
@@ -108,10 +116,19 @@ body{
   color: var(--Foundation-Green-green-500);
 }
 
+.button--init[data-button="outline"]:hover{
+  background-color: var(--Foundation-Green-green-500, #015121);
+  color: var(--white);
+}
+
 /* variable button primary */
 .button--init[data-button="primary"] {
   background: var(--Foundation-Green-green-500, #015121);
   color: var(--white);
+}
+
+.button--init[data-button="primary"]:hover{
+  background-color: var(--Foundation-Green-green-700, #013A17);
 }
 
 /* modifier button primary */
@@ -122,4 +139,10 @@ body{
 /* modifier button primary */
 .button--init[button-rounded="none"] {
   border-radius: 0.25rem;
+}
+
+.f-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
