@@ -94,6 +94,13 @@ body{
   margin-right: auto;
 }
 
+@media (max-width: 767px) {
+  .container{
+    width: 100%;
+    min-width: auto;
+  }
+}
+
 /* init button */
 .button--init{
   height: 2.625rem;
