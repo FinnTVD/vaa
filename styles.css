@@ -5,7 +5,288 @@
   background-color: var(--white);
 }
 
+/* start header up */
+
 #header .header__date {
   height: 2.5rem;
   background-color: var(--Library-Title, #015121);
 }
+
+#header .header__date .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#current_date {
+  position: relative;
+  padding-left: 2.4rem;
+  color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+#current_date::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background-color: var(--white);
+  transform: translate(0, -50%);
+}
+#header .header__date__info {
+  height: 100%;
+  width: 8.6875rem;
+  background-color: var(--foundation-green-light-hover, #dceae1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1.12rem;
+  margin-right: 0.81rem;
+}
+
+#header .header__date__info .icon__star {
+  width: 1.125rem;
+  height: 1.125rem;
+  object-fit: contain;
+  transform: translateY(-2px);
+  flex-shrink: 0;
+}
+
+#header .header__date__info span {
+  color: var(--greyscaletext-80-primary, #262626);
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.2;
+  display: inline-block;
+  margin-left: 0.37rem;
+}
+
+#header .header__social {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+#header .header__social .icon__social:first-child {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 1.39rem;
+  object-fit: contain;
+  flex-shrink: 0;
+  display: block;
+}
+
+#header .header__social .icon__social:last-child {
+  width: 2.58306rem;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+/* end header up */
+/* --------------------------------------------- */
+/* start header center */
+#header .header__center {
+  height: 5.6rem;
+  width: 100%;
+}
+
+#header .header__center .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#header .header__center .header__center--left {
+  display: flex;
+  align-items: center;
+}
+#header .header__center .header__center__logo {
+  width: 2.375rem;
+  height: 3.125rem;
+  object-fit: cover;
+}
+
+#header .header__center .header__center__title {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.13rem;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.header__center .header__center__title h2 {
+  color: var(--Foundation-Green-green-500, var(--Library-Title, #015121));
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.header__center .header__center__title span {
+  display: inline-block;
+  color: var(--greyscaletext-40-tag);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+#header .header__center--right {
+  display: flex;
+  align-items: center;
+}
+
+#header .header__center--right .header__center__search {
+  width: 18.9375rem;
+  height: 2.625rem;
+  border-radius: 6.5rem;
+  background-color: grey;
+}
+
+#header .header__center--right .header__center__button {
+  display: flex;
+  align-items: center;
+  margin-left: 1.75rem;
+}
+.header__center--right .header__center__button a:first-child {
+  margin-right: 0.5rem;
+}
+/* end header center */
+/* --------------------------------------------- */
+/* start header down  */
+#header .header__down {
+  width: 100%;
+  height: calc(11.625rem - 5.6rem - 2.5rem);
+  border-top: 1px solid var(--greyscaletext-5-div);
+  border-bottom: 1px solid var(--greyscaletext-5-div);
+}
+
+#header .header__down .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 6.19rem;
+}
+
+#header .header__down .header__down__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 2.5rem;
+}
+
+.header__down .header__down__list .item__title {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.5rem;
+  position: relative;
+  cursor: pointer;
+}
+.header__down .header__down__list .item__title .item__title__box {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.header__down .header__down__list .item__title .item__title__box::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--Library-Title);
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: right;
+  transform: scaleX(0);
+}
+
+.header__down .header__down__list .item__title .header__icon--down.active {
+  display: none;
+}
+
+.header__down__list .item__title .item__title--hover li {
+  margin-top: 1.19rem;
+  transition: all 0.2s;
+}
+
+.header__down__list .item__title .item__title--hover li:first-child {
+  margin-top: 0;
+}
+
+.header__down__list .item__title .item__title--hover a {
+  transition: all 0.2s;
+}
+
+.header__down__list .item__title .item__title--hover a:hover {
+  padding-left: 1rem;
+  color: var(--Foundation-Green-green-500);
+}
+
+.header__down__list .item__title .item__title--hover {
+  position: absolute;
+  width: 10.625rem;
+  height: fit-content;
+  bottom: 0rem;
+  left: 50%;
+  transform: translate(-50%, 100%) scaleY(25%);
+  border: 1px solid #eee;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0px 217px 61px 0px rgba(204, 204, 204, 0),
+    0px 139px 56px 0px rgba(204, 204, 204, 0.01),
+    0px 78px 47px 0px rgba(204, 204, 204, 0.05),
+    0px 35px 35px 0px rgba(204, 204, 204, 0.09),
+    0px 9px 19px 0px rgba(204, 204, 204, 0.1);
+  padding: 0.75rem 1.5rem;
+  z-index: -1;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s;
+  transform-origin: top;
+}
+
+.header__down__list .item__title:hover {
+  color: var(--Library-Title);
+}
+
+.header__down__list .item__title:hover .item__title__box::before {
+  transform-origin: left;
+  transform: scaleX(100%);
+}
+
+.header__down__list .item__title:hover .header__icon--down {
+  display: none;
+}
+
+.header__down__list .item__title:hover .header__icon--down.active {
+  display: block;
+}
+
+.header__down__list .item__title:hover .item__title--hover {
+  transform: translate(-50%, 100%) scaleY(100%);
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 10;
+  bottom: -0.5rem;
+}
+
+.header__down__list .item__title:hover::before {
+  content: "";
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0;
+  width: 100%;
+  height: 2rem;
+  transform: translateY(100%);
+  background-color: transparent;
+}
+/* end header down */

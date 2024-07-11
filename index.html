@@ -11,15 +11,190 @@
     href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
     rel="stylesheet"
   />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
   <link rel="stylesheet" href="./globals.css" />
   <link rel="stylesheet" href="./styles.css" />
   <style></style>
   <body>
     <header id="header">
-      <div class="header__date"></div>
+      <!-- start header up -->
+      <div class="header__date">
+        <div class="container">
+          <div id="current_date">
+            <script>
+              function getFormattedDate() {
+                let today = new Date();
+
+                // Sử dụng phương thức toLocaleDateString() để định dạng ngày tháng
+                let formattedDate = today.toLocaleDateString("vi-VN", {
+                  weekday: "long", // hiển thị tên ngày trong tuần
+                  day: "2-digit", // hiển thị ngày dưới dạng số với 2 chữ số
+                  month: "2-digit", // hiển thị tháng dưới dạng số với 2 chữ số
+                  year: "numeric", // hiển thị năm dưới dạng số bốn chữ số
+                });
+
+                return formattedDate;
+              }
+
+              const currentDate = document.getElementById("current_date");
+              currentDate.innerHTML = getFormattedDate();
+            </script>
+          </div>
+          <div class="header__date__info">
+            <img
+              class="icon__star"
+              src="./imgs/header/star_orange.svg"
+              alt="icon star"
+            />
+            <span>TIN NỔI BẬT</span>
+          </div>
+          <p>Tối ưu công năng sử dụng trong căn hộ ở Ecopark</p>
+          <div class="header__social">
+            <img
+              class="icon__social"
+              src="./imgs/header/header_fbsvg.svg"
+              alt="icon facebook"
+            />
+            <img
+              class="icon__social"
+              src="./imgs/header/header_zalo.svg"
+              alt="icon facebook"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- end header up -->
+
+      <!-- start header center -->
+      <div class="header__center">
+        <div class="container">
+          <div class="header__center--left">
+            <div class="header__center__logo">
+              <img src="./imgs/header/logo.png" alt="logo vaa" />
+            </div>
+            <div class="header__center__title">
+              <h2>HỘI KIẾN TRÚC SƯ VIỆT NAM</h2>
+              <span>Viet Nam Association of Architects (VAA)</span>
+            </div>
+          </div>
+          <div class="header__center--right">
+            <div class="header__center__search"></div>
+            <!-- login - signin -->
+            <div class="header__center__button">
+              <a href="/dang-nhap" data-button="outline" class="button--init">
+                Đăng nhập
+              </a>
+              <a href="/dang-ky" data-button="primary" class="button--init"
+                >Đăng ký</a
+              >
+            </div>
+            <!-- account -->
+            <div class="header__center__account">
+              <div class="header__center__avatar">
+                <img src="" alt="" />
+              </div>
+              <div class="header__center__info">
+                <div class="header__center__name">
+                  <span>Xin chào</span>
+                  <span>Hoàng Hải !</span>
+                </div>N=
+                <div class="header__center__name">
+                  <img src="./imgs/header/settings.svg" alt="" />
+                  <span>Cài đặt tài khoản</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end header center -->
+
+      <!-- start header down -->
+      <nav class="header__down">
+        <div class="container">
+          <div class="header__down__list">
+            <div class="item__title">
+              <div class="item__title__box">
+                Về chúng tôi
+                <img
+                  class="header__icon--down"
+                  src="./imgs/header/arrow_down.svg"
+                  alt="icon arrow down"
+                />
+                <img
+                  class="header__icon--down active"
+                  src="./imgs/header/arrow_down_active.svg"
+                  alt="icon arrow down"
+                />
+                <ul class="item__title--hover">
+                  <li><a href="/">Về HKTSVN</a></li>
+                  <li><a href="/">Về HKTSVN</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="item__title">
+              <div class="item__title__box">
+                Thư viện điện tử
+                <img
+                  class="header__icon--down"
+                  src="./imgs/header/arrow_down.svg"
+                  alt="icon arrow down"
+                />
+                <img
+                  class="header__icon--down active"
+                  src="./imgs/header/arrow_down_active.svg"
+                  alt="icon arrow down"
+                />
+                <ul class="item__title--hover">
+                  <li><a href="/">Về HKTSVN</a></li>
+                  <li><a href="/">Về HKTSVN</a></li>
+                </ul>
+              </div>
+            </div>
+            <a class="item__title" href="/"
+              ><div class="item__title__box">Các kiểu nhà ở nông thôn</div></a
+            >
+            <a class="item__title" href="/"
+              ><div class="item__title__box">Sinh viên kiến trúc</div></a
+            >
+            <div class="item__title">
+              <div class="item__title__box">
+                Thông tin cuộc thi kiến trúc
+                <img
+                  class="header__icon--down"
+                  src="./imgs/header/arrow_down.svg"
+                  alt="icon arrow down"
+                />
+                <img
+                  class="header__icon--down active"
+                  src="./imgs/header/arrow_down_active.svg"
+                  alt="icon arrow down"
+                />
+                <ul class="item__title--hover">
+                  <li><a href="/">Về HKTSVN</a></li>
+                  <li><a href="/">Về HKTSVN</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- end header down -->
     </header>
     <main>
-      <div style="display: flex; gap: 1rem; flex-direction: column">
+      <div
+        style="
+          display: flex;
+          gap: 1rem;
+          flex-direction: column;
+          margin-top: 5rem;
+        "
+        class="container"
+      >
         <button data-button="outline" class="button--init">Đăng nhập</button>
         <button data-button="primary" class="button--init">Đăng ký</button>
         <button
@@ -38,8 +213,55 @@
         >
           Xem tất cả
         </button>
+        <!-- Swiper -->
+        <div
+          class=""
+          style="
+            width: 24.1875rem;
+            height: 15.4375rem;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            user-select: none;
+          "
+        >
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <footer></footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="./index.js" type="text/javascript"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true,
+        effect: "fade",
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        speed: 500,
+      });
+    </script>
   </body>
 </html>
