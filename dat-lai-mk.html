@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./globals.css" />
+    <link rel="stylesheet" href="./dat-lai-mk.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section class="sig-in-up">
+        <div class="header_mk">
+          <img
+            class="header_mk_img"
+            src="./imgs/home/Logo_hoikientrucsuvn.png"
+            alt=""
+          />
+          <div class="header_vaa">
+            <p class="header_vaa_title">HỘI KIẾN TRÚC SƯ VIỆT NAM</p>
+            <span class="header_vaa_label"
+              >Viet Nam Association of Architects (VAA)</span
+            >
+          </div>
+        </div>
+        <img class="sig_bgimg" src="./imgs/bg-mk.png" alt="" />
+        <div class="sig_content"></div>
+
+        <form id="formElement" class="sig_content_box">
+          <div class="sig_content_box_title">Cài đặt lại mật khẩu</div>
+          <p class="sig_content_box_descript">
+            Nhập email bạn đã đăng ký để lấy lại mật khẩu
+          </p>
+          <div class="sig_content_item_input">
+            <span class="sig_content_box_label">Email:</span>
+            <input
+              id="email"
+              name="email"
+              class="sig_input text_input"
+              placeholder="Điền thông tin tại đây"
+              type="text"
+            />
+            <div id="mess_validator_email" class="mess_validator">
+              <img src="./svg/err_validator.svg" alt="" />
+              <p class="mess_validator_text">Vui lòng nhập lại thông tin</p>
+            </div>
+          </div>
+          <div class="otp_input_warper">
+            <div class="sig_content_item_input--type_box">
+              <input
+                type="text"
+                maxlength="1"
+                class="otp-input text_input"
+                id="otp1"
+                autofocus
+              />
+              <input
+                type="text"
+                maxlength="1"
+                class="otp-input text_input"
+                id="otp2"
+              />
+              <input
+                type="text"
+                maxlength="1"
+                class="otp-input text_input"
+                id="otp3"
+              />
+              <input
+                type="text"
+                maxlength="1"
+                class="otp-input text_input"
+                id="otp4"
+              />
+              <input
+                type="text"
+                maxlength="1"
+                class="otp-input text_input"
+                id="otp5"
+              />
+              <input
+                type="text"
+                maxlength="1"
+                class="otp-input text_input"
+                id="otp6"
+              />
+            </div>
+            <div id="mess_validator_otp" class="mess_validator">
+              <img src="./svg/err_validator.svg" alt="" />
+              <p class="mess_validator_text">Vui lòng nhập lại thông tin</p>
+            </div>
+          </div>
+
+          <div class="sig_content_item_input">
+            <span class="sig_content_box_label">Mật khẩu:</span>
+            <div class="sig_input_warpperpass">
+              <input
+                class="sig_input text_input input_pass"
+                placeholder="Điền thông tin tại đây"
+                type="password"
+                id="password"
+                name="password"
+              />
+              <img class="eye_input eye_x" src="./svg/eye_x.svg" alt="" />
+              <img class="eye_input eye" src="./svg/eye.svg" alt="" />
+              <div id="mess_validator_pass" class="mess_validator">
+                <img src="./svg/err_validator.svg" alt="" />
+                <p class="mess_validator_text">Vui lòng nhập lại thông tin</p>
+              </div>
+            </div>
+          </div>
+          <div class="sig_content_item_input">
+            <span class="sig_content_box_label">Nhập lại mật khẩu:</span>
+            <div class="sig_input_warpperpass">
+              <input
+                class="sig_input text_input input_pass"
+                placeholder="Điền thông tin tại đây"
+                type="password"
+                id="passwordRetype"
+                name="passwordRetype"
+              />
+              <img class="eye_input eye_x" src="./svg/eye_x.svg" alt="" />
+              <img class="eye_input eye" src="./svg/eye.svg" alt="" />
+              <div id="mess_validator_passRetype" class="mess_validator">
+                <img src="./svg/err_validator.svg" alt="" />
+                <p class="mess_validator_text">Vui lòng nhập lại thông tin</p>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown_container">
+            <div class="dropdown_header">
+              <span data-value="" id="selected-option">Chọn một tùy chọn</span>
+              <svg
+                id="dropdown_header_svg"
+                xmlns="http://www.w3.org/2000/svg"
+                width="17"
+                height="9"
+                viewBox="0 0 17 9"
+                fill="none"
+              >
+                <path
+                  d="M15.2057 1L8.4974 8L1.78906 1"
+                  stroke="#A9A9A9"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <ul class="dropdown_list">
+              <li class="dropdown_item" data-value="option1">Tùy chọn 1</li>
+              <li class="dropdown_item" data-value="option2">Tùy chọn 2</li>
+              <li class="dropdown_item" data-value="option3">Tùy chọn 3</li>
+            </ul>
+            <div id="mess_validator_selected" class="mess_validator">
+              <img src="./svg/err_validator.svg" alt="" />
+              <p class="mess_validator_text">Vui lòng nhập lại thông tin</p>
+            </div>
+          </div>
+          <div class="sig_content_item_input">
+            <span class="sig_content_radio_label">Giới tính*</span>
+            <div class="radio_option_warper">
+              <div class="radio_option">
+                <input
+                  class="radio_option_input"
+                  type="radio"
+                  id="radio_option1"
+                  name="radio_group"
+                  value="Nam"
+                />
+                <label class="radio_option_option" for="radio_option1"
+                  >Nam</label
+                >
+              </div>
+              <div class="radio_option">
+                <input
+                  class="radio_option_input"
+                  type="radio"
+                  id="radio_option2"
+                  name="radio_group"
+                  value="Nữ"
+                />
+                <label class="radio_option_option" for="radio_option1"
+                  >Nữ</label
+                >
+              </div>
+            </div>
+            <div id="mess_validator_radio" class="mess_validator">
+              <img src="./svg/err_validator.svg" alt="" />
+              <p class="mess_validator_text">Vui lòng nhập lại thông tin</p>
+            </div>
+          </div>
+          <button
+            type="submit"
+            id="submit-otp"
+            button-rounded="none"
+            data-button="primary"
+            button-width="full"
+            class="button--init"
+          >
+            Xem tất cả
+          </button>
+          <div class="sig_content_box_or">
+            <div class="sig_content_box_or_line"></div>
+            <span> hoặc Đăng nhập bằng </span>
+            <div class="sig_content_box_or_line"></div>
+          </div>
+          <div class="sig_content_box_gg">
+            <img src="./imgs/gg.png" alt="" />
+            <span>Đăng nhập bằng Google</span>
+          </div>
+          <div class="sig_content_box_singin">
+            <span class="sig_content_box_singintext"
+              >Bạn chưa có tài khoản?
+            </span>
+            <a class="sig_content_box_singinlink" href="">Đăng ký </a>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+  <script src="./validator.js"></script>
+</html>

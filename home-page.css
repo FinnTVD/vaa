@@ -1031,6 +1031,36 @@
   font-weight: 800;
   line-height: 120%;
 }
+.footer_title_small {
+  position: relative;
+  width: 17.625rem;
+  height: 1.35963rem;
+  padding: 0.37575rem;
+  border-radius: 0.18625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_title_smallimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.18625rem;
+  object-fit: cover;
+}
+.footer_title_smalltext {
+  color: var(--Foundation-Green-Light, #e6f4ec);
+  text-align: center;
+  font-family: "Nunito Sans";
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 130%;
+  letter-spacing: 0.00813rem;
+  z-index: 10;
+}
 .footer_contact {
   margin-left: 7.12rem;
   display: flex;
@@ -1038,6 +1068,15 @@
 }
 .footer_contact_item {
   display: flex;
+}
+.footer_contact_item:first-child .footer_contact_svg > img {
+  width: 3.6875rem;
+  height: 3.6875rem;
+}
+.footer_contact_svg > img {
+  width: 2.25rem;
+  height: 2.25rem;
+  object-fit: contain;
 }
 .footer_contact_item_text {
   margin-left: 1rem;
