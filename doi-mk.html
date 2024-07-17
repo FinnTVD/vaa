@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="./globals.css" />
+    <link rel="stylesheet" href="./doi-mk.css" />
+  </head>
+  <body>
+    <section>
+      <form id="form_doimk">
+        <div class="form_doimk_content">
+          <div class="formmk_title">
+            <p>Đổi mật khẩu</p>
+            <span
+              >(Để đảm bảo tính bảo mật vui lòng đặt mật khẩu với ít nhất 8 kí
+              tự)</span
+            >
+          </div>
+          <div class="sig_content_item_input">
+            <span class="sig_content_box_label">Mật khẩu cũ:</span>
+            <div class="sig_input_warpperpass">
+              <input
+                class="sig_input text_input input_pass"
+                placeholder="*******12"
+                type="password"
+                id="password"
+                name="password"
+              />
+              <img class="eye_input eye_x" src="./svg/eye_x.svg" alt="" />
+              <img class="eye_input eye" src="./svg/eye.svg" alt="" />
+              <div id="mess_validator_pass" class="mess_validator">
+                <img src="./svg/err_validator.svg" alt="" />
+                <p class="mess_validator_text">Mật Khẩu không được để trống</p>
+              </div>
+            </div>
+          </div>
+          <div class="sig_content_item_input">
+            <span class="sig_content_box_label">Mật khẩu mới:</span>
+            <div class="sig_input_warpperpass">
+              <input
+                class="sig_input text_input input_pass"
+                placeholder="*******12"
+                type="password"
+                id="new_password"
+                name="new_password"
+              />
+              <img class="eye_input eye_x" src="./svg/eye_x.svg" alt="" />
+              <img class="eye_input eye" src="./svg/eye.svg" alt="" />
+              <div id="mess_validator_passnew" class="mess_validator">
+                <img src="./svg/err_validator.svg" alt="" />
+                <p class="mess_validator_text">Mật Khẩu không được để trống</p>
+              </div>
+            </div>
+          </div>
+          <div class="sig_content_item_input">
+            <span class="sig_content_box_label">Xác nhận lại:</span>
+            <div class="sig_input_warpperpass">
+              <input
+                class="sig_input text_input input_pass"
+                placeholder="*******12"
+                type="password"
+                id="retype_password"
+                name="retype_password"
+              />
+              <img class="eye_input eye_x" src="./svg/eye_x.svg" alt="" />
+              <img class="eye_input eye" src="./svg/eye.svg" alt="" />
+              <div id="mess_validator_passretype" class="mess_validator">
+                <img src="./svg/err_validator.svg" alt="" />
+                <p class="mess_validator_text">Mật Khẩu không được để trống</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          button-rounded="none"
+          data-button="primary"
+          button-width="full"
+          id="form_profile"
+          class="button--init profile_information_btn"
+          type="submit"
+        >
+          Cập nhật
+        </button>
+      </form>
+    </section>
+  </body>
+  <script src="./validator.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const formElement = document.getElementById("form_doimk");
+      onSubmitForm({
+        form: formElement,
+        input: [
+          {
+            id: "password",
+            type: "password",
+            error: "mess_validator_pass",
+            minlength: 2,
+            // valueCharacters: true,
+            uppercase: true,
+            pass: "123",
+          },
+          {
+            id: "new_password",
+            idRetype: "retype_password",
+            type: "password",
+            error: "mess_validator_passnew",
+            errorRetype: "mess_validator_passretype",
+            minlength: 2,
+            // valueCharacters: true,
+            uppercase: true,
+            oldpass: "123",
+          },
+        ],
+      });
+    });
+  </script>
+</html>

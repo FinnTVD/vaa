@@ -1,0 +1,108 @@
+#form_doimk {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.form_doimk_content {
+  width: 100%;
+  flex: 1 0 0;
+  border-radius: var(--corner-radius-xSmall, 0.5rem);
+  border: 1px solid var(--greyscaletext-5-div, #ececec);
+  background: var(--greyscaletext-0, #fff);
+  padding: 1.75rem 2rem;
+}
+.formmk_title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.31rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.0625rem solid rgba(236, 236, 236, 0.7);
+}
+.formmk_title p {
+  color: var(--greyscaletext-80-primary, #262626);
+  font-family: "Nunito Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  margin-right: 0.5rem;
+}
+.formmk_title span {
+  color: var(--greyscaletext-30, #828282);
+  font-family: "Nunito Sans";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.sig_content_item_input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.56rem;
+}
+.sig_content_item_input:last-child {
+  margin-bottom: 0;
+}
+.sig_content_box_label {
+  width: 6rem;
+  color: var(--greyscaletext-80-primary, #262626);
+  font-family: "Nunito Sans";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.00219rem;
+  margin-right: 1.63rem;
+}
+.sig_input_warpperpass {
+  position: relative;
+  flex: 1 0 0;
+}
+.input_pass {
+  height: 2.5rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  background: #f8f8f8;
+  border: 1px solid var(--greyscaletext-5-div, #ececec);
+  padding-left: 1.12rem;
+  padding-right: 1.5rem;
+}
+.input_pass::placeholder {
+  color: var(--greyscaletext-20-inactive, #a9a9a9);
+  font-family: "Nunito Sans";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+.eye_input {
+  cursor: pointer;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.75rem;
+}
+.eye {
+  display: none;
+}
+.mess_validator {
+  align-items: center;
+  margin-top: 0.5rem;
+  display: none;
+}
+.mess_validator img {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.25rem;
+}
+.mess_validator_text {
+  color: var(--Primary-color-Tangerine-red, #ff4e41);
+  font-family: "Nunito Sans";
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+.profile_information_btn {
+  width: 9.8125rem !important;
+  margin-top: 1.5rem;
+}
