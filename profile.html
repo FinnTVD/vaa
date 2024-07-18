@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./globals.css" />
+    <link rel="stylesheet" href="./profile.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="breadcrumb container">
+      <a href="/">Trang chủ</a>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="18"
+        height="19"
+        viewBox="0 0 18 19"
+        fill="none"
+      >
+        <path
+          d="M7.27539 14.9727L11.7754 10.4727C11.9277 10.332 12.0039 10.1562 12.0039 9.94531C12.0039 9.73438 11.9277 9.55859 11.7754 9.41797L7.27539 4.91797C7.13477 4.76562 6.95898 4.68945 6.74805 4.68945C6.53711 4.68945 6.36133 4.76562 6.2207 4.91797C6.06836 5.05859 5.99219 5.23438 5.99219 5.44531C5.99219 5.65625 6.06836 5.83203 6.2207 5.97266L10.1934 9.94531L6.2207 13.918C6.06836 14.0586 5.99219 14.2344 5.99219 14.4453C5.99219 14.6562 6.06836 14.832 6.2207 14.9727C6.36133 15.125 6.53711 15.2012 6.74805 15.2012C6.95898 15.2012 7.13477 15.125 7.27539 14.9727Z"
+          fill="url(#paint0_linear_2245_8112)"
+        ></path>
+        <defs>
+          <linearGradient
+            id="paint0_linear_2245_8112"
+            x1="8.99805"
+            y1="15.2012"
+            x2="8.99805"
+            y2="4.68945"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#13733A"></stop>
+            <stop offset="1" stop-color="#028437"></stop>
+          </linearGradient>
+        </defs>
+      </svg>
+      <a href="/">Tin tức</a>
+    </div>
+    <section class="profile container">
+      <div class="profile_assies">
+        <div class="profile_mini">
+          <span class="profile_mini_title">Xin chào bạn!</span>
+          <div class="profile_mini_line"></div>
+          <div class="profile_mini_information">
+            <div class="profile_mini_information_warperavt">
+              <img
+                class="profile_mini_information_avt"
+                src="./imgs/aboutus/ceo.png"
+                alt=""
+              />
+            </div>
+            <div class="profile_mini_information_acc">
+              <p class="profile_mini_information_name">Hoàng Hải</p>
+              <div class="profile_mini_information_date">
+                <img
+                  class="profile_mini_date_icon"
+                  src="./svg/watch.svg"
+                  alt=""
+                />
+                <span class="profile_mini_date_label"
+                  >Ngày tham gia: 21/06/2024
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="profile_directional">
+          <div class="profile_directional_item profile_directional_item_active">
+            <img
+              class="profile_directional_item_img"
+              src="./svg/user.svg"
+              alt=""
+            />
+            <span class="profile_directional_item_text">Thông tin cơ bản</span>
+          </div>
+          <div class="profile_directional_item">
+            <img
+              class="profile_directional_item_img"
+              src="./svg/key.svg"
+              alt=""
+            />
+            <span class="profile_directional_item_text">Mật khẩu</span>
+          </div>
+          <div class="profile_directional_item">
+            <img
+              class="profile_directional_item_img"
+              src="./svg/logout.svg"
+              alt=""
+            />
+            <span class="profile_directional_item_text">Đăng xuất</span>
+          </div>
+        </div>
+      </div>
+      <form id="formElement_profile" class="profile_information">
+        <div class="profile_information_all">
+          <span class="profile_information_title">Thông tin thành viên</span>
+          <div class="profile_form">
+            <div class="profile_form_text">
+              <div class="profile_form_text_row">
+                <div class="sig_content_item_input">
+                  <span class="sig_content_box_label">Họ và tên*</span>
+                  <input
+                    id="name"
+                    name="name"
+                    class="sig_input text_input"
+                    placeholder="Điền thông tin tại đây"
+                    type="text"
+                  />
+                  <div id="mess_validator_name" class="mess_validator">
+                    <img src="./svg/err_validator.svg" alt="" />
+                    <p class="mess_validator_text">
+                      Vui lòng nhập lại thông tin
+                    </p>
+                  </div>
+                </div>
+                <div class="sig_content_item_input content_item_input_mb">
+                  <span class="sig_content_radio_label">Giới tính*</span>
+                  <div class="radio_option_warper">
+                    <div class="radio_option">
+                      <input
+                        class="radio_option_input"
+                        type="radio"
+                        id="radio_option1"
+                        name="radio_group_gender"
+                        value="Nam"
+                      />
+                      <label class="radio_option_option" for="radio_option1"
+                        >Nam</label
+                      >
+                    </div>
+                    <div class="radio_option">
+                      <input
+                        class="radio_option_input"
+                        type="radio"
+                        id="radio_option2"
+                        name="radio_group_gender"
+                        value="Nữ"
+                      />
+                      <label class="radio_option_option" for="radio_option1"
+                        >Nữ</label
+                      >
+                    </div>
+                  </div>
+                  <div id="mess_validator_radio" class="mess_validator">
+                    <img src="./svg/err_validator.svg" alt="" />
+                    <p class="mess_validator_text">
+                      Vui lòng nhập lại thông tin
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="profile_form_text_row">
+                <div class="sig_content_item_input">
+                  <span class="sig_content_box_label">Email:</span>
+                  <input
+                    id="email"
+                    name="email"
+                    class="sig_input text_input"
+                    placeholder="Điền thông tin tại đây"
+                    type="email"
+                  />
+                  <div id="mess_validator_email" class="mess_validator">
+                    <img src="./svg/err_validator.svg" alt="" />
+                    <p class="mess_validator_text">
+                      Vui lòng nhập lại thông tin
+                    </p>
+                  </div>
+                </div>
+                <div class="sig_content_item_input">
+                  <span class="sig_content_box_label">Số điện thoai*</span>
+                  <input
+                    id="phone"
+                    name="phone"
+                    class="sig_input text_input"
+                    placeholder="Điền thông tin tại đây"
+                    type="number"
+                  />
+                  <div id="mess_validator_phone" class="mess_validator">
+                    <img src="./svg/err_validator.svg" alt="" />
+                    <p class="mess_validator_text">
+                      Vui lòng nhập lại thông tin
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="profile_form_text_row">
+                <div class="sig_content_item_input">
+                  <span class="sig_content_box_label">Tên đăng nhập:</span>
+                  <input
+                    id="user"
+                    name="user"
+                    class="sig_input text_input"
+                    placeholder="Điền thông tin tại đây"
+                    type="text"
+                  />
+                  <div id="mess_validator_user" class="mess_validator">
+                    <img src="./svg/err_validator.svg" alt="" />
+                    <p class="mess_validator_text">
+                      Vui lòng nhập lại thông tin
+                    </p>
+                  </div>
+                </div>
+                <div class="sig_content_item_input">
+                  <span class="sig_content_box_label">Số CCCD:</span>
+                  <input
+                    id="cccd"
+                    name="cccd"
+                    class="sig_input text_input"
+                    placeholder="Điền thông tin tại đây"
+                    type="number"
+                  />
+                  <div id="mess_validator_cccd" class="mess_validator">
+                    <img src="./svg/err_validator.svg" alt="" />
+                    <p class="mess_validator_text">
+                      Vui lòng nhập lại thông tin
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <p class="label_birth">Ngày sinh*</p>
+              <div class="profile_form_text_row content_item_input_mb">
+                <div class="dropdown_container">
+                  <div class="dropdown_header">
+                    <span
+                      data-value=""
+                      id="selected_option_Dateofbirth"
+                      class="selected-option"
+                      >Chọn</span
+                    >
+                    <svg
+                      id="dropdown_header_svg"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="9"
+                      viewBox="0 0 17 9"
+                      fill="none"
+                    >
+                      <path
+                        d="M15.2057 1L8.4974 8L1.78906 1"
+                        stroke="#A9A9A9"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <ul class="dropdown_list">
+                    <li class="dropdown_item" data-value="option1">
+                      Tùy chọn 1
+                    </li>
+                    <li class="dropdown_item" data-value="option2">
+                      Tùy chọn 2
+                    </li>
+                    <li class="dropdown_item" data-value="option3">
+                      Tùy chọn 3
+                    </li>
+                  </ul>
+                  <div id="mess_validator_Dateofbirth" class="mess_validator">
+                    <img src="./svg/err_validator.svg" alt="" />
+                    <p class="mess_validator_text">
+                      Vui lòng nhập lại thông tin
+                    </p>
+                  </div>
+                </div>
+                <div class="dropdown_container">
+                  <div class="dropdown_header">
+                    <span
+                      data-value=""
+                      id="selected_option_Monthofbirth"
+                      class="selected-option"
+                      >Chọn</span
+                    >
+                    <svg
+                      id="dropdown_header_svg"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="9"
+                      viewBox="0 0 17 9"
+                      fill="none"
+                    >
+                      <path
+                        d="M15.2057 1L8.4974 8L1.78906 1"
+                        stroke="#A9A9A9"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <ul class="dropdown_list">
+                    <li class="dropdown_item" data-value="option1">
+                      Tùy chọn 1
+                    </li>
+                    <li class="dropdown_item" data-value="option2">
+                      Tùy chọn 2
+                    </li>
+                    <li class="dropdown_item" data-value="option3">
+                      Tùy chọn 3
+                    </li>
+                  </ul>
+                  <div id="mess_validator_Monthofbirth" class="mess_validator">
+                    <img src="./svg/err_validator.svg" alt="" />
+                    <p class="mess_validator_text">
+                      Vui lòng nhập lại thông tin
+                    </p>
+                  </div>
+                </div>
+                <div class="dropdown_container">
+                  <div class="dropdown_header">
+                    <span
+                      data-value=""
+                      id="selected_option_Yearofbirth"
+                      class="selected-option"
+                      >Chọn
+                    </span>
+                    <svg
+                      id="dropdown_header_svg"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="9"
+                      viewBox="0 0 17 9"
+                      fill="none"
+                    >
+                      <path
+                        d="M15.2057 1L8.4974 8L1.78906 1"
+                        stroke="#A9A9A9"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <ul class="dropdown_list">
+                    <li class="dropdown_item" data-value="option1">
+                      Tùy chọn 1
+                    </li>
+                    <li class="dropdown_item" data-value="option2">
+                      Tùy chọn 2
+                    </li>
+                    <li class="dropdown_item" data-value="option3">
+                      Tùy chọn 3
+                    </li>
+                  </ul>
+                  <div id="mess_validator_Yearofbirth" class="mess_validator">
+                    <img src="./svg/err_validator.svg" alt="" />
+                    <p class="mess_validator_text">
+                      Vui lòng nhập lại thông tin
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="sig_content_item_input input_content_flex1">
+                <span class="sig_content_box_label">Địa chỉ</span>
+                <input
+                  id="address"
+                  name="address"
+                  class="sig_input text_input"
+                  placeholder="Điền thông tin tại đây"
+                  type="text"
+                />
+                <div id="mess_validator_address" class="mess_validator">
+                  <img src="./svg/err_validator.svg" alt="" />
+                  <p class="mess_validator_text">Vui lòng nhập lại thông tin</p>
+                </div>
+              </div>
+              <div class="">
+                <div class="sig_content_item_input_flex">
+                  <span class="sig_content_radio_label_flex"
+                    >Tự động nhận <br />
+                    thông tin của Hội:</span
+                  >
+                  <div class="radio_option_warper">
+                    <div class="radio_option_flex">
+                      <input
+                        class="radio_option_input"
+                        type="radio"
+                        id="radio_option1"
+                        name="radio_group_notification"
+                        value="Có"
+                      />
+                      <label
+                        class="radio_option_option_flex"
+                        for="radio_option1"
+                        >Có</label
+                      >
+                    </div>
+                    <div class="radio_option_flex">
+                      <input
+                        class="radio_option_input"
+                        type="radio"
+                        id="radio_option2"
+                        name="radio_group_notification"
+                        value="Không"
+                      />
+                      <label
+                        class="radio_option_option_flex"
+                        for="radio_option1"
+                        >Không</label
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div id="mess_validator_otification" class="mess_validator">
+                  <img src="./svg/err_validator.svg" alt="" />
+                  <p class="mess_validator_text">Vui lòng nhập lại thông tin</p>
+                </div>
+              </div>
+              <div class="KTSVN_member_check">
+                <div
+                  id="checkbox_member"
+                  class="KTSVN_member_check_input"
+                ></div>
+                <p class="KTSVN_member_check_text">
+                  Thành viên thuộc hội KTSVN
+                </p>
+              </div>
+              <div id="KTSVN_member" class="KTSVN_member">
+                <div class="profile_form_text_row">
+                  <div class="dropdown_container dropdown_container2">
+                    <!-- <div class="dropdown_container_label">Chức vụ</div> -->
+                    <div class="dropdown_header">
+                      <span
+                        data-value=""
+                        id="selected_option_branch"
+                        class="selected-option"
+                        >Chọn một tùy chọn</span
+                      >
+                      <svg
+                        id="dropdown_header_svg"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="9"
+                        viewBox="0 0 17 9"
+                        fill="none"
+                      >
+                        <path
+                          d="M15.2057 1L8.4974 8L1.78906 1"
+                          stroke="#A9A9A9"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <ul class="dropdown_list">
+                      <li class="dropdown_item" data-value="option1">
+                        Tùy chọn 1
+                      </li>
+                      <li class="dropdown_item" data-value="option2">
+                        Tùy chọn 2
+                      </li>
+                      <li class="dropdown_item" data-value="option3">
+                        Tùy chọn 3
+                      </li>
+                    </ul>
+                    <div id="mess_validator_branch" class="mess_validator">
+                      <img src="./svg/err_validator.svg" alt="" />
+                      <p class="mess_validator_text">
+                        Vui lòng nhập lại thông tin
+                      </p>
+                    </div>
+                  </div>
+                  <div class="dropdown_container">
+                    <!-- <div class="dropdown_container_label">Địa chỉ website</div> -->
+                    <div class="dropdown_header">
+                      <span
+                        data-value=""
+                        id="selected_option_city​​province"
+                        class="selected-option"
+                        >Chọn một tùy chọn</span
+                      >
+                      <svg
+                        id="dropdown_header_svg"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="9"
+                        viewBox="0 0 17 9"
+                        fill="none"
+                      >
+                        <path
+                          d="M15.2057 1L8.4974 8L1.78906 1"
+                          stroke="#A9A9A9"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <ul class="dropdown_list">
+                      <li class="dropdown_item" data-value="option1">
+                        Tùy chọn 1
+                      </li>
+                      <li class="dropdown_item" data-value="option2">
+                        Tùy chọn 2
+                      </li>
+                      <li class="dropdown_item" data-value="option3">
+                        Tùy chọn 3
+                      </li>
+                    </ul>
+                    <div
+                      id="mess_validator_city​​province"
+                      class="mess_validator"
+                    >
+                      <img src="./svg/err_validator.svg" alt="" />
+                      <p class="mess_validator_text">
+                        Vui lòng nhập lại thông tin
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="profile_form_text_row">
+                  <div class="dropdown_container dropdown_container2">
+                    <div class="dropdown_container_label">Vai trò*</div>
+                    <div class="dropdown_header">
+                      <span
+                        data-value=""
+                        id="selected_option_role"
+                        class="selected-option"
+                        >Chọn một tùy chọn</span
+                      >
+                      <svg
+                        id="dropdown_header_svg"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="9"
+                        viewBox="0 0 17 9"
+                        fill="none"
+                      >
+                        <path
+                          d="M15.2057 1L8.4974 8L1.78906 1"
+                          stroke="#A9A9A9"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <ul class="dropdown_list">
+                      <li class="dropdown_item" data-value="option1">
+                        Tùy chọn 1
+                      </li>
+                      <li class="dropdown_item" data-value="option2">
+                        Tùy chọn 2
+                      </li>
+                      <li class="dropdown_item" data-value="option3">
+                        Tùy chọn 3
+                      </li>
+                    </ul>
+                    <div id="mess_validator_role" class="mess_validator">
+                      <img src="./svg/err_validator.svg" alt="" />
+                      <p class="mess_validator_text">
+                        Vui lòng nhập lại thông tin
+                      </p>
+                    </div>
+                  </div>
+                  <div class="sig_content_item_input input_content_flex1">
+                    <span class="sig_content_box_label">Mã hội viện</span>
+                    <input
+                      id="assembly_code"
+                      name="assembly_code"
+                      class="sig_input text_input"
+                      placeholder="Điền thông tin tại đây"
+                      type="text"
+                    />
+                    <div
+                      id="mess_validator_assemblycode"
+                      class="mess_validator"
+                    >
+                      <img src="./svg/err_validator.svg" alt="" />
+                      <p class="mess_validator_text">
+                        Vui lòng nhập lại thông tin
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <p class="KTSVN_member_fee">
+                  Tình trạng hội phí: <span> Đã nộp đủ </span>
+                </p>
+                <div class="profile_form_text_row">
+                  <div
+                    class="dropdown_container dropdown_container2 chungchi_handg"
+                  >
+                    <div class="dropdown_container_label">Chứng chỉ</div>
+                    <div class="dropdown_header">
+                      <span
+                        data-value=""
+                        id="selected_option_certificate"
+                        class="selected-option"
+                        >Chọn một tùy chọn</span
+                      >
+                      <svg
+                        id="dropdown_header_svg"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="9"
+                        viewBox="0 0 17 9"
+                        fill="none"
+                      >
+                        <path
+                          d="M15.2057 1L8.4974 8L1.78906 1"
+                          stroke="#A9A9A9"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <ul class="dropdown_list">
+                      <li class="dropdown_item" data-value="false">Không</li>
+                      <li class="dropdown_item" data-value="true">Có</li>
+                    </ul>
+                    <div class="radio_option_warper">
+                      <div class="radio_option">
+                        <input
+                          class="radio_option_input"
+                          type="radio"
+                          id="certificate_radio_option1"
+                          name="radio_group_certificate"
+                          value="có"
+                        />
+                        <label class="radio_option_option" for="radio_option1"
+                          >Có</label
+                        >
+                      </div>
+                      <div class="radio_option">
+                        <input
+                          class="radio_option_input"
+                          type="radio"
+                          id="certificate_radio_option2"
+                          name="radio_group_certificate"
+                          value="không"
+                        />
+                        <label class="radio_option_option" for="radio_option1"
+                          >Không</label
+                        >
+                      </div>
+                    </div>
+                    <div id="mess_validator_certificate" class="mess_validator">
+                      <img src="./svg/err_validator.svg" alt="" />
+                      <p class="mess_validator_text">
+                        Vui lòng nhập lại thông tin
+                      </p>
+                    </div>
+                  </div>
+                  <div class="profile_file">
+                    <input id="fileInput" type="file" name="fileInput" />
+                    <div class="profile_file_fiter">
+                      <img src="./svg/down_load.svg" alt="" />
+                      <p>Đăng file chứng chỉ <span> tại đây </span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="profile_form_text_row content_item_input_mb">
+                  <div class="sig_content_item_input">
+                    <span class="sig_content_box_label">Năm kinh nghiệm</span>
+                    <input
+                      id="years_of_experience"
+                      name="years_of_experience"
+                      class="sig_input text_input"
+                      placeholder="..."
+                      type="text"
+                    />
+                    <div
+                      id="mess_validator_yearsofexperience"
+                      class="mess_validator"
+                    >
+                      <img src="./svg/err_validator.svg" alt="" />
+                      <p class="mess_validator_text">
+                        Vui lòng nhập lại thông tin
+                      </p>
+                    </div>
+                  </div>
+                  <div class="sig_content_item_input">
+                    <span class="sig_content_box_label">Học hàm học vị</span>
+                    <input
+                      id="rank"
+                      name="rank"
+                      class="sig_input text_input"
+                      placeholder="..."
+                      type="text"
+                    />
+                    <div id="mess_validator_rank" class="mess_validator">
+                      <img src="./svg/err_validator.svg" alt="" />
+                      <p class="mess_validator_text">
+                        Vui lòng nhập lại thông tin
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="profile_form_text_row">
+                  <div class="sig_content_item_input">
+                    <span class="sig_content_box_label"
+                      >Giải thưởng thuộc KTSVN</span
+                    >
+                    <input
+                      id="prize"
+                      name="prize"
+                      class="sig_input text_input"
+                      placeholder="Điền thông tin tại đây"
+                      type="text"
+                    />
+                    <div id="mess_validator_prize" class="mess_validator">
+                      <img src="./svg/err_validator.svg" alt="" />
+                      <p class="mess_validator_text">
+                        Vui lòng nhập lại thông tin
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="profile_form_text_row">
+                  <div class="dropdown_container dropdown_container2">
+                    <div class="dropdown_container_label">Hành nghề</div>
+                    <div class="dropdown_header">
+                      <span
+                        data-value=""
+                        id="selected_option_work"
+                        class="selected-option"
+                        >Chọn một tùy chọn</span
+                      >
+                      <svg
+                        id="dropdown_header_svg"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="9"
+                        viewBox="0 0 17 9"
+                        fill="none"
+                      >
+                        <path
+                          d="M15.2057 1L8.4974 8L1.78906 1"
+                          stroke="#A9A9A9"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <ul class="dropdown_list">
+                      <li class="dropdown_item" data-value="option1">
+                        Tùy chọn 1
+                      </li>
+                      <li class="dropdown_item" data-value="option2">
+                        Tùy chọn 2
+                      </li>
+                      <li class="dropdown_item" data-value="option3">
+                        Tùy chọn 3
+                      </li>
+                    </ul>
+                    <div id="mess_validator_work" class="mess_validator">
+                      <img src="./svg/err_validator.svg" alt="" />
+                      <p class="mess_validator_text">
+                        Vui lòng nhập lại thông tin
+                      </p>
+                    </div>
+                  </div>
+                  <div class="sig_content_item_input">
+                    <span class="sig_content_box_label"
+                      >Giấy phép kinh doanh</span
+                    >
+                    <input
+                      id="business_license"
+                      name="business_license"
+                      class="sig_input text_input"
+                      placeholder="Điền thông tin tại đây"
+                      type="text"
+                    />
+                    <div
+                      id="mess_validator_business_license"
+                      class="mess_validator"
+                    >
+                      <img src="./svg/err_validator.svg" alt="" />
+                      <p class="mess_validator_text">
+                        Vui lòng nhập lại thông tin
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="profile_form_text_row">
+                  <div class="sig_content_item_input">
+                    <span class="sig_content_box_label">Tên công ty</span>
+                    <input
+                      id="company"
+                      name="company"
+                      class="sig_input text_input"
+                      placeholder="Điền thông tin tại đây"
+                      type="text"
+                    />
+                    <div id="mess_validator_company" class="mess_validator">
+                      <img src="./svg/err_validator.svg" alt="" />
+                      <p class="mess_validator_text">
+                        Vui lòng nhập lại thông tin
+                      </p>
+                    </div>
+                  </div>
+                  <div class="sig_content_item_input">
+                    <span class="sig_content_box_label">Mã số thuế</span>
+                    <input
+                      id="tax_code"
+                      name="tax_code"
+                      class="sig_input text_input"
+                      placeholder="Điền thông tin tại đây"
+                      type="text"
+                    />
+                    <div id="mess_validator_tax_code" class="mess_validator">
+                      <img src="./svg/err_validator.svg" alt="" />
+                      <p class="mess_validator_text">
+                        Vui lòng nhập lại thông tin
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="profile_form_text_row">
+                  <div class="sig_content_item_input">
+                    <span class="sig_content_box_label">Chức vụ</span>
+                    <input
+                      id="position"
+                      name="position"
+                      class="sig_input text_input"
+                      placeholder="Điền thông tin tại đây"
+                      type="text"
+                    />
+                    <div id="mess_validator_position" class="mess_validator">
+                      <img src="./svg/err_validator.svg" alt="" />
+                      <p class="mess_validator_text">
+                        Vui lòng nhập lại thông tin
+                      </p>
+                    </div>
+                  </div>
+                  <div class="sig_content_item_input">
+                    <span class="sig_content_box_label">Địa chỉ website</span>
+                    <input
+                      id="website"
+                      name="website"
+                      class="sig_input text_input"
+                      placeholder="Điền thông tin tại đây"
+                      type="text"
+                    />
+                    <div id="mess_validator_website" class="mess_validator">
+                      <img src="./svg/err_validator.svg" alt="" />
+                      <p class="mess_validator_text">
+                        Vui lòng nhập lại thông tin
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="profile_form_avt">
+              <div class="profile_form_avt_warper">
+                <img
+                  class="profile_form_avt_img"
+                  src="./imgs/aboutus/ceo.png"
+                  alt=""
+                />
+                <div class="profile_form_avt_edit">
+                  <img src="./svg/edit.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          button-rounded="none"
+          data-button="primary"
+          button-width="full"
+          id="form_profile"
+          class="button--init profile_information_btn"
+          type="submit"
+        >
+          Lưu
+        </button>
+      </form>
+    </section>
+    <footer class="footer_profile">
+      <div class="footer_profile_content container">
+        <p class="footer_profile_title">
+          VAA © 2024. Thiết kế bởi OkHub Việt Nam
+        </p>
+        <div class="footer_profile_link">
+          <a href="">Trang chủ</a>
+          <a href="">Tìm kiếm</a>
+          <a href="">Liên hệ</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./validator.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const formElement = document.getElementById("formElement_profile");
+      const inputMember = document.getElementById("checkbox_member");
+      const KTSVN_member = document.getElementById("KTSVN_member");
+      var checkbox_member_active = false;
+      inputMember.addEventListener("click", function () {
+        if (checkbox_member_active) {
+          inputMember.classList.remove("checkbox_member_active");
+          checkbox_member_active = false;
+          KTSVN_member.innerHTML = ``;
+        } else {
+          inputMember.classList.add("checkbox_member_active");
+          checkbox_member_active = true;
+          KTSVN_member.innerHTML = ``;
+          selected();
+        }
+      });
+      const selected_option_certificate = document.getElementById(
+        "selected_option_certificate"
+      );
+      document.getElementById("certificate_radio_option1").checked = true;
+      selected_option_certificate.setAttribute("data-value", true);
+      selected_option_certificate.textContent =
+        selected_option_certificate.getAttribute("data-value") === "true"
+          ? "Có"
+          : "Không";
+      onSubmitForm({
+        form: formElement,
+        input: [
+          { id: "name", type: "text", error: "mess_validator_name" },
+          {
+            id: "radio_group_gender",
+            type: "radio",
+            error: "mess_validator_radio",
+          },
+          { id: "email", type: "email", error: "mess_validator_email" },
+          { id: "phone", type: "phone", error: "mess_validator_phone" },
+          { id: "user", type: "text", error: "mess_validator_user" },
+          { id: "cccd", type: "text", error: "mess_validator_cccd" },
+          {
+            id: "selected_option_Dateofbirth",
+            type: "selected",
+            error: "mess_validator_Dateofbirth",
+          },
+          {
+            id: "selected_option_Monthofbirth",
+            type: "selected",
+            error: "mess_validator_Monthofbirth",
+          },
+          {
+            id: "selected_option_Yearofbirth",
+            type: "selected",
+            error: "mess_validator_Yearofbirth",
+          },
+          {
+            id: "address",
+            type: "text",
+            error: "mess_validator_address",
+          },
+          {
+            id: "radio_group_notification",
+            type: "radio",
+            error: "mess_validator_otification",
+          },
+          {
+            id: "selected_option_branch",
+            type: "selected",
+            error: "mess_validator_branch",
+          },
+          {
+            id: "selected_option_city​​province",
+            type: "selected",
+            error: "mess_validator_city​​province",
+          },
+          {
+            id: "selected_option_role",
+            type: "selected",
+            error: "mess_validator_role",
+          },
+          {
+            id: "assembly_code",
+            type: "text",
+            error: "mess_validator_assemblycode",
+          },
+          {
+            id: "years_of_experience",
+            type: "text",
+            error: "mess_validator_yearsofexperience",
+          },
+          {
+            id: "rank",
+            type: "text",
+            error: "mess_validator_rank",
+          },
+          {
+            id: "prize",
+            type: "text",
+            error: "mess_validator_prize",
+          },
+          {
+            id: "business_license",
+            type: "text",
+            error: "mess_validator_business_license",
+          },
+          {
+            id: "selected_option_work",
+            type: "selected",
+            error: "mess_validator_work",
+          },
+          {
+            id: "company",
+            type: "text",
+            error: "mess_validator_company",
+          },
+          {
+            id: "tax_code",
+            type: "text",
+            error: "mess_validator_tax_code",
+          },
+          {
+            id: "position",
+            type: "text",
+            error: "mess_validator_position",
+          },
+          {
+            id: "website",
+            type: "text",
+            error: "mess_validator_website",
+          },
+        ],
+      });
+    });
+  </script>
+</html>

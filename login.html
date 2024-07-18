@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./globals.css" />
+    <link rel="stylesheet" href="./login.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section class="login_page">
+        <div class="header_mk">
+          <img
+            class="header_mk_img"
+            src="./imgs/home/Logo_hoikientrucsuvn.png"
+            alt=""
+          />
+          <div class="header_vaa">
+            <p class="header_vaa_title">HỘI KIẾN TRÚC SƯ VIỆT NAM</p>
+            <span class="header_vaa_label"
+              >Viet Nam Association of Architects (VAA)</span
+            >
+          </div>
+        </div>
+        <img class="sig_bgimg" src="./imgs/bg-mk.png" alt="" />
+        <div class="sig_content"></div>
+        <div class="warpper_formElement">
+          <div class="sig_content_box_title">Đăng nhập</div>
+          <form id="form_login">
+            <div class="sig_content_item_input">
+              <span class="sig_content_box_label">Email:</span>
+              <input
+                id="email"
+                name="email"
+                class="sig_input text_input"
+                placeholder="Điền thông tin tại đây"
+                type="email"
+              />
+              <div id="mess_validator_email" class="mess_validator">
+                <img src="./svg/err_validator.svg" alt="" />
+                <p class="mess_validator_text">Vui lòng nhập lại thông tin</p>
+              </div>
+            </div>
+            <div class="sig_content_item_input">
+              <span class="sig_content_box_label">Mật khẩu:</span>
+              <div class="sig_input_warpperpass">
+                <input
+                  class="sig_input text_input input_pass"
+                  placeholder="Điền thông tin tại đây"
+                  type="password"
+                  id="password"
+                  name="password"
+                />
+                <img class="eye_input eye_x" src="./svg/eye_x.svg" alt="" />
+                <img class="eye_input eye" src="./svg/eye.svg" alt="" />
+                <div id="mess_validator_pass" class="mess_validator">
+                  <img src="./svg/err_validator.svg" alt="" />
+                  <p class="mess_validator_text">
+                    Mật Khẩu không được để trống
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="sig_content_box_or">
+              <div class="sig_content_box_or_line"></div>
+              <span> hoặc Đăng nhập bằng </span>
+              <div class="sig_content_box_or_line"></div>
+            </div>
+            <div class="sig_content_box_gg">
+              <img src="./imgs/gg.png" alt="" />
+              <span>Đăng nhập bằng Google</span>
+            </div>
+            <button
+              type="submit"
+              id="submit-otp"
+              button-rounded="none"
+              data-button="primary"
+              button-width="full"
+              class="button--init"
+            >
+              Xem tất cả
+            </button>
+            <div class="sig_content_box_singin">
+              <span class="sig_content_box_singintext"
+                >Bạn chưa có tài khoản?
+              </span>
+              <a class="sig_content_box_singinlink" href="">Đăng ký </a>
+            </div>
+            <div class="sig_content_box_singin">
+              <span class="sig_content_box_singintext"
+                >Bạn quên mật khẩu? Cài đặt lại mật khẩu qua email
+              </span>
+              <a class="sig_content_box_singinlink" href=""> Tại đây</a>
+            </div>
+          </form>
+        </div>
+      </section>
+      <footer class="footer_profile">
+        <div class="footer_profile_content container">
+          <p class="footer_profile_title">
+            VAA © 2024. Thiết kế bởi OkHub Việt Nam
+          </p>
+          <div class="footer_profile_link">
+            <a href="">Trang chủ</a>
+            <a href="">Tìm kiếm</a>
+            <a href="">Liên hệ</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+  <script src="./validator.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const formElement = document.getElementById("form_login");
+      onSubmitForm({
+        form: formElement,
+        input: [
+          { id: "email", type: "email", error: "mess_validator_email" },
+          {
+            id: "password",
+            type: "password",
+            error: "mess_validator_pass",
+            minlength: 2,
+            // valueCharacters: true,
+            uppercase: true,
+          },
+        ],
+      });
+    });
+  </script>
+</html>
