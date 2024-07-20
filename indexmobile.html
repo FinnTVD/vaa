@@ -87,9 +87,9 @@
             </div>
           </label>
           <!-- start avatar -->
-          <a href="/" class="box__avatar">
+          <button id="box__avatar" class="box__avatar">
             <img src="./imgs/header/avatar.jpg" alt="avatar" />
-          </a>
+          </button>
           <!-- end avatar -->
         </div>
       </div>
@@ -222,8 +222,62 @@
           </li>
           <li><a href="/">Liên hệ</a></li>
         </ul>
+        <a href="/" class="menu__btn__logout">
+          <img src="./imgs/header/logout.svg" alt="icon logout" />
+          <span> Đăng xuất</span>
+        </a>
       </nav>
       <!-- end menu -->
+
+      <!-- start menu second account -->
+      <div id="menu__second">
+        <a class="item__link__account active" href="/">
+          <div class="box__link__icon">
+            <img
+              class="icon--default"
+              src="./imgs/header/icon-user.svg"
+              alt="icon user"
+            />
+            <img
+              class="icon--active"
+              src="./imgs/header/icon-user-active.svg"
+              alt="icon user active"
+            />
+          </div>
+          <span>Tài khoản của tôi</span>
+        </a>
+        <a class="item__link__account" href="/">
+          <div class="box__link__icon">
+            <img
+              class="icon--default"
+              src="./imgs/header/icon-pass.svg"
+              alt="icon password"
+            />
+            <img
+              class="icon--active"
+              src="./imgs/header/icon-user-active.svg"
+              alt="icon user active"
+            />
+          </div>
+          <span>Mật khẩu</span>
+        </a>
+        <a class="item__link__account" href="/">
+          <div class="box__link__icon">
+            <img
+              class="icon--default"
+              src="./imgs/header/icon-logout.svg"
+              alt="icon logout"
+            />
+            <img
+              class="icon--active"
+              src="./imgs/header/icon-user-active.svg"
+              alt="icon user active"
+            />
+          </div>
+          <span>Đăng xuất</span>
+        </a>
+      </div>
+      <!-- end menu second account -->
     </header>
     <main>
       <div

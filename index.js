@@ -14,9 +14,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // handle toggle menu
     const boxMenu = document.getElementById("box__menu");
+    const menuSecond = document.getElementById("menu__second");
     boxMenu.addEventListener("click", () => {
-      const header = document.getElementById("header");
-      header.classList.toggle("active");
+      if (menuSecond.classList.contains("active")) {
+        menuSecond.classList.remove("active");
+        boxMenu.classList.remove("active");
+      } else {
+        const header = document.getElementById("header");
+        header.classList.toggle("active");
+      }
     });
 
     // hande accordion menu
@@ -30,5 +36,12 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       });
     }
+
+    // handle toggle menu second when click avatar
+    const boxAvatar = document.getElementById("box__avatar");
+    boxAvatar.addEventListener("click", () => {
+      boxMenu.classList.toggle("active");
+      menuSecond.classList.toggle("active");
+    });
   }
 });
