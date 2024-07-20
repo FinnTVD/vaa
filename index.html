@@ -52,24 +52,61 @@
             />
             <span>TIN NỔI BẬT</span>
           </div>
-          <p>Tối ưu công năng sử dụng trong căn hộ ở Ecopark</p>
+          <!-- <p style="color: white">
+            Tối ưu công năng sử dụng trong căn hộ ở Ecopark
+          </p> -->
+          <div class="swiper mySwiper__header">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div><p>Slide 1</p></div>
+              </div>
+              <div class="swiper-slide">
+                <div><p>Slide 2</p></div>
+              </div>
+              <div class="swiper-slide">
+                <div><p>Slide 3</p></div>
+              </div>
+              <div class="swiper-slide">
+                <div><p>Slide 4</p></div>
+              </div>
+              <div class="swiper-slide">
+                <div><p>Slide 5</p></div>
+              </div>
+              <div class="swiper-slide">
+                <div><p>Slide 6</p></div>
+              </div>
+              <div class="swiper-slide">
+                <div><p>Slide 7</p></div>
+              </div>
+              <div class="swiper-slide">
+                <div><p>Slide 8</p></div>
+              </div>
+              <div class="swiper-slide">
+                <div><p>Slide 9</p></div>
+              </div>
+            </div>
+          </div>
           <div class="header__social">
-            <img
-              class="icon__social"
-              src="./imgs/header/header_fbsvg.svg"
-              alt="icon facebook"
-            />
-            <img
-              class="icon__social"
-              src="./imgs/header/header_zalo.svg"
-              alt="icon facebook"
-            />
+            <a href="/" target="_blank" class="icon__social">
+              <img
+                class="icon__social"
+                src="./imgs/header/header_fbsvg.svg"
+                alt="icon facebook"
+              />
+            </a>
+            <a href="/" target="_blank" class="icon__social">
+              <img
+                class="icon__social"
+                src="./imgs/header/header_zalo.svg"
+                alt="icon facebook"
+              />
+            </a>
           </div>
         </div>
       </div>
       <!-- end header up -->
 
-      <!-- start header center -->   
+      <!-- start header center -->
       <div class="header__center">
         <div class="container">
           <div class="header__center--left">
@@ -82,16 +119,51 @@
             </div>
           </div>
           <div class="header__center--right">
-            <div class="header__center__search"></div>
+            <label for="search" class="header__center__search">
+              <input
+                id="search"
+                name="search"
+                type="text"
+                placeholder="Tìm kiếm"
+              />
+              <img src="./imgs/header/icon-search.svg" alt="icon search" />
+              <div id="dropdown_search" class="">
+                <span class="history">LỊCH SỬ TÌM KIẾM</span>
+                <a href="/" class="item__result">
+                  <span>Thiết kế công viên sinh thái</span>
+                  <div class="item__delete__result">
+                    <img src="./imgs/header/icon-close.svg" alt="icon close" />
+                  </div>
+                </a>
+                <a href="/" class="item__result">
+                  <span>Chương mới công nghệ AI</span>
+                  <div class="item__delete__result">
+                    <img src="./imgs/header/icon-close.svg" alt="icon close" />
+                  </div>
+                </a>
+                <a href="/" class="item__result">
+                  <span>Thiết kế công viên sinh thái</span>
+                  <div class="item__delete__result">
+                    <img src="./imgs/header/icon-close.svg" alt="icon close" />
+                  </div>
+                </a>
+                <a href="/" class="item__result">
+                  <span>Giải thưởng top 10 Awards</span>
+                  <div class="item__delete__result">
+                    <img src="./imgs/header/icon-close.svg" alt="icon close" />
+                  </div>
+                </a>
+              </div>
+            </label>
             <!-- login - signin -->
-            <!-- <div class="header__center__button">
+            <div style="display: none" class="header__center__button">
               <a href="/dang-nhap" data-button="outline" class="button--init">
                 Đăng nhập
               </a>
               <a href="/dang-ky" data-button="primary" class="button--init"
                 >Đăng ký</a
               >
-            </div> -->
+            </div>
             <!-- account -->
             <div class="header__center__account">
               <div class="header__center__avatar">
@@ -99,10 +171,10 @@
               </div>
               <div class="header__center__info">
                 <div class="header__center__name">
-                  <span>Xin chào</span>
-                  <span>Hoàng Hải !</span>
+                  <span class="hi">Xin chào</span>
+                  <span class="name">Hoàng Hải !</span>
                 </div>
-                <div class="header__center__name">
+                <div class="header__center__settings">
                   <img src="./imgs/header/settings.svg" alt="" />
                   <span>Cài đặt tài khoản</span>
                 </div>
@@ -272,7 +344,7 @@
         </div>
       </div>
     </main>
-    <footer></footer>
+    <footer style="height: 100vh"></footer>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -285,6 +357,18 @@
         spaceBetween: 0,
         loop: true,
         effect: "fade",
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        speed: 500,
+      });
+    </script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper__header", {
+        direction: "vertical",
+        loop: true,
         autoplay: {
           delay: 2500,
           disableOnInteraction: false,
